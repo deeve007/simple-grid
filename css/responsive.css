@@ -1,0 +1,63 @@
+/*--------------------------------------------------------------------------*\
+
+        A Simple CSS Framework
+        =================================
+		Adapted from Toast CSS framework, but mobile first as it should be.
+		Make sure to include respond.js if you want to support ie8.
+
+\*--------------------------------------------------------------------------*/
+
+* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+.container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 2%;
+}
+
+.row {
+		margin-left: 0;
+		max-width: none;
+}
+
+.col {
+        display: block;
+        vertical-align: top;
+		margin: 0 0 3% 0;
+        /* Clearfix */
+        overflow: hidden;
+        *overflow: visible;
+}
+
+
+/* breakpoint +45em (720px) */
+@media screen and (min-width: 45em) {
+        .row {
+				margin-left: -3%;
+				max-width: 105%;
+        }
+
+        .col {
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+				margin: 0 -.25em 3% 3%;
+        }
+		
+		.span_1 { width: 5.33333333325%; }
+		.span_2 { width: 13.6666666665%; }
+		.span_3 { width: 22%; }
+		.span_4 { width: 30.333333333%; }
+		.span_5 { width: 38.66666666625%; }
+		.span_6 { width: 47%; }
+		.span_7 { width: 55.33333333375%; }
+		.span_8 { width: 63.666666666%; }
+		.span_9 { width: 72%; }
+		.span_10 { width: 80.3333333325%; }
+		.span_11 { width: 88.66666666675%; }
+		.span_12 { width: 97%; }
+}

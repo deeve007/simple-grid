@@ -1,0 +1,122 @@
+<!DOCTYPE HTML> 
+<html itemscope itemtype="http://schema.org/Product">
+<head>
+
+	<title>Responsive Grid System</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Simple responsive grid system that allows for multi-level rows for displaying items such as an image gallery or design portfolio, and adds support for IE8 which is required for a mobile first approach." />
+	
+	<!-- Call all CSS here rather than @import for performance reasons, along with scripts for IE compatibility -->
+	<link rel="stylesheet" media="all" href="css/reset.css" />
+	<link rel="stylesheet" media="all" href="css/responsive.css" />
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" media="all" href="css/style.css" />
+	
+	<!-- CSS purely for this example page, so you can see each grid element on the frontend -->
+	<style>
+	.col {
+		min-height: 100px;
+		background: grey;
+	}
+	</style>
+	
+</head>
+
+<body>
+
+<div class="container">
+	
+	<!-- This example displays a single row, website header for example -->
+	<div class="row">
+		<h1 class="col span_4">This would be the logo</h1>
+		<div class="col span_8">And this could be the main nav</div>
+	</div>
+	
+	<!-- This example displays a basic 3 column row -->
+	<div class="row">
+		<div class="col span_12">
+			Full width
+		</div>
+		<div class="col span_4">
+			Span 4
+		</div>
+		<div class="col span_4">
+			Span 4
+		</div>
+		<div class="col span_2">
+			Span 2
+		</div>
+		<div class="col span_2">
+			Span 2
+		</div>
+		<div class="col span_4">
+			Span 4
+		</div>
+		<div class="col span_4">
+			Span 4
+		</div>
+		<div class="col span_4">
+			Span 4
+		</div>
+		
+		<div class="col span_9" style="padding: 20px;">Span 9</div>
+		<div class="col span_3">Span 3</div>
+	</div>
+	
+	<!-- This example displays a multi-level grid row using different grid element widths -->
+	<div class="row">		
+		<div class="col span_3">Span 3</div>
+		<div class="col span_3">
+			<p>As you can see, even if the content of one block is longer than others in that same row, the next row of elements clears
+			properly. This is the advantage of using "display: inline-block" rather than "float: left" that the majority of 
+			responsive frameworks use.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum lorem eget purus lacinia eu aliquam tellus ullamcorper. Nunc eu velit tristique diam volutpat gravida non cursus eros.</p>
+		</div>
+		<div class="col span_3">Span 3</div>
+		<div class="col span_3">Span 3</div>
+		
+		<div class="col span_3">Span 3</div>
+		<div class="col span_3">Span 3</div>
+		<div class="col span_6">Span 6</div>
+		
+		<div class="col span_7">Span 7</div>
+		<div class="col span_5">Span 5</div>
+		
+		<div class="col span_5">Span 5</div>
+		<div class="col span_2">Span 2</div>
+		<div class="col span_5">Span 5</div>
+		
+		<div class="col span_1">Span 1</div>
+		<div class="col span_11">Span 11</div>
+		
+		<div class="col span_1">Span 1</div>
+		<div class="col span_1">Span 1</div>
+		<div class="col span_1">Span 1</div>
+		<div class="col span_1">Span 1</div>
+		<div class="col span_1">Span 1</div>
+		<div class="col span_1">Span 1</div>
+		<div class="col span_1">Span 1</div>
+		<div class="col span_1">Span 1</div>
+		<div class="col span_1">Span 1</div>
+		<div class="col span_1">Span 1</div>
+		<div class="col span_1">Span 1</div>
+		<div class="col span_1">Span 1</div>
+		
+		<div class="col span_10">Span 10</div>
+		<div class="col span_1">Span 1</div>
+		<div class="col span_1">Span 1</div>
+
+		<div class="col span_4">Span 4</div>
+		<div class="col span_4">Span 4</div>
+		<div class="col span_4">Span 4</div>
+	</div>
+	
+</div>
+	
+</body>
+</html>
